@@ -1,0 +1,52 @@
+{
+  "name": "@alethio/explorer-plugin-3box",
+  "publisher": "aleth.io",
+  "pluginName": "3box",
+  "version": "1.0.0",
+  "description": "3Box integration for Alethio Explorer",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run build-js-prod",
+    "build-dev": "npm run clean && npm run build-js-dev",
+    "clean": "rimraf ./dist",
+    "build-js-prod": "webpack --config=./webpack.config.prod.js",
+    "build-js-dev": "webpack --config=./webpack.config.dev.js",
+    "watch": "webpack-runner --config=./webpack.config.dev.js --watch",
+    "prepare": "npm run build"
+  },
+  "author": "Alexandru Ciuca <alexandru.ciuca@consensys.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alethio/explorer-plugin-3box"
+  },
+  "devDependencies": {
+    "@alethio/explorer-ui": "^1.0.0-beta.0",
+    "@types/react": "^16.8.12",
+    "@types/react-dom": "^16.8.3",
+    "@types/webpack-env": "^1.13.9",
+    "fork-ts-checker-webpack-plugin": "^1.3.5",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "plugin-api": "npm:@alethio/cms-plugin-api@^1.0.0-beta.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.3",
+    "source-map-loader": "^0.2.4",
+    "source-map-support": "^0.5.12",
+    "styled-components": "^3.4.2",
+    "ts-loader": "^6.0.2",
+    "tslib": "^1.9.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1",
+    "typescript-styled-plugin": "^0.14.0",
+    "typescript-tslint-plugin": "^0.3.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.1.2",
+    "webpack-runner": "^3.1.0"
+  },
+  "dependencies": {
+    "@alethio/ui": "^1.0.0-beta.11"
+  }
+}

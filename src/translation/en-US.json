@@ -1,0 +1,7 @@
+{
+    "accountView.threeBox.name.label": "Name",
+    "accountView.threeBox.website.label": "Website",
+    "accountView.threeBox.github.label": "GitHub",
+    "accountView.threeBox.twitter.label": "Twitter",
+    "accountView.threeBox.disclaimer.label": "Data provided by {link}3box.io{/link}"
+}
