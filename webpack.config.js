@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+var { generateManifest } = require("plugin-api/build/generateManifest");
 
 function getConfig(isProduction) {
     var isDebug = !isProduction;
@@ -21,7 +22,8 @@ function getConfig(isProduction) {
             // This is needed to be able to activate some features for development (like ReduxDevTools)
             // and, also, some libs (like React) have an optimized (smaller&faster) builds
             // if NODE_ENV is set to "production"
-            'process.env.NODE_ENV': JSON.stringify(isDebug ? 'development' : 'production')
+            'process.env.NODE_ENV': JSON.stringify(isDebug ? 'development' : 'production'),
+            '__plugin_manifest__': JSON.stringify(generateManifest(require("./package.json")))
         })
     ];
 

@@ -22,3 +22,5 @@ const alethio3boxPlugin: IPlugin = {
 
 // tslint:disable-next-line:no-default-export
 export default alethio3boxPlugin;
+
+export const manifest = __plugin_manifest__;
