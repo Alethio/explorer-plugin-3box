@@ -2,7 +2,7 @@
   "name": "@alethio/explorer-plugin-3box",
   "publisher": "aleth.io",
   "pluginName": "3box",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "3Box integration for Alethio Explorer",
   "main": "dist/index.js",
   "scripts": {
