@@ -2,7 +2,7 @@ import * as React from "react";
 import { Label } from "@alethio/ui/lib/data/Label";
 import { ValueBox } from "@alethio/ui/lib/layout/content/box/ValueBox";
 import styled from "@alethio/ui/lib/styled-components";
-import { ExternalLink } from "plugin-api/component/ExternalLink";
+import { ExternalLink } from "@alethio/ui/lib/control/ExternalLink";
 import { IThreeBoxData } from "./IThreeBoxData";
 import { ITranslation } from "plugin-api/ITranslation";
 
